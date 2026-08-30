@@ -1,0 +1,360 @@
+{
+  "courses": [
+    {
+      "id": "sec-1785657753858",
+      "section_name": "ACT -NT A",
+      "subject_name": "CC 103",
+      "passing_threshold": 60,
+      "createdAt": "2026-08-02T08:02:33.858Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "std-1785657765969-0",
+      "student_id_number": "2023-1456",
+      "student_name": "Sample",
+      "email": "Sample1",
+      "section_id": "sec-1785657753858"
+    },
+    {
+      "id": "std-1785657765969-1",
+      "student_id_number": "2023-0157",
+      "student_name": "Sampe",
+      "email": "Sample2",
+      "section_id": "sec-1785657753858"
+    },
+    {
+      "id": "std-1785657765969-2",
+      "student_id_number": "2023-2458",
+      "student_name": "harsh",
+      "email": "jkasd",
+      "section_id": "sec-1785657753858"
+    }
+  ],
+  "weight_configs": {
+    "sec-1785657753858": {
+      "section_id": "sec-1785657753858",
+      "midterm_weight": 40,
+      "final_weight": 60,
+      "lecture_weight": 40,
+      "laboratory_weight": 60,
+      "tree_data": {
+        "id": "root-final-rating",
+        "name": "Final Subject Grade Rating",
+        "weight_percentage": 100,
+        "is_leaf": false,
+        "children": [
+          {
+            "id": "node-midterm",
+            "name": "Midterm Grade",
+            "weight_percentage": 40,
+            "is_leaf": false,
+            "term": "Midterm",
+            "children": [
+              {
+                "id": "node-midterm-lec",
+                "name": "Lecture Component",
+                "weight_percentage": 40,
+                "is_leaf": false,
+                "class_type": "Lecture",
+                "term": "Midterm",
+                "children": [
+                  {
+                    "id": "leaf-mid-lec-1",
+                    "name": "Major Exam",
+                    "weight_percentage": 40,
+                    "is_leaf": true,
+                    "total_items": 100,
+                    "class_type": "Lecture",
+                    "term": "Midterm"
+                  },
+                  {
+                    "id": "leaf-mid-lec-2",
+                    "name": "Quizzes",
+                    "weight_percentage": 30,
+                    "is_leaf": true,
+                    "total_items": 50,
+                    "class_type": "Lecture",
+                    "term": "Midterm"
+                  },
+                  {
+                    "id": "node-1785657817609-afdb",
+                    "name": "Assignment",
+                    "weight_percentage": 20,
+                    "is_leaf": true,
+                    "total_items": 50
+                  },
+                  {
+                    "id": "node-1785657827391-shr6",
+                    "name": "Attendance",
+                    "weight_percentage": 10,
+                    "is_leaf": true,
+                    "total_items": 50
+                  }
+                ]
+              },
+              {
+                "id": "node-midterm-lab",
+                "name": "Laboratory Component",
+                "weight_percentage": 60,
+                "is_leaf": false,
+                "class_type": "Laboratory",
+                "term": "Midterm",
+                "children": [
+                  {
+                    "id": "leaf-mid-lab-1",
+                    "name": "Lab Practical Exam",
+                    "weight_percentage": 40,
+                    "is_leaf": true,
+                    "total_items": 100,
+                    "class_type": "Laboratory",
+                    "term": "Midterm"
+                  },
+                  {
+                    "id": "leaf-mid-lab-2",
+                    "name": "Lab Exercises",
+                    "weight_percentage": 50,
+                    "is_leaf": true,
+                    "total_items": 50,
+                    "class_type": "Laboratory",
+                    "term": "Midterm"
+                  },
+                  {
+                    "id": "leaf-mid-lab-3",
+                    "name": "Attendance/Assignments",
+                    "weight_percentage": 10,
+                    "is_leaf": true,
+                    "total_items": 100,
+                    "class_type": "Laboratory",
+                    "term": "Midterm"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-final",
+            "name": "Final Term Grade",
+            "weight_percentage": 60,
+            "is_leaf": false,
+            "term": "Final",
+            "children": [
+              {
+                "id": "node-final-lec",
+                "name": "Lecture Component",
+                "weight_percentage": 40,
+                "is_leaf": false,
+                "class_type": "Lecture",
+                "term": "Final",
+                "children": [
+                  {
+                    "id": "leaf-fin-lec-1",
+                    "name": "Major Exam",
+                    "weight_percentage": 40,
+                    "is_leaf": true,
+                    "total_items": 100,
+                    "class_type": "Lecture",
+                    "term": "Final"
+                  },
+                  {
+                    "id": "leaf-fin-lec-2",
+                    "name": "Quizzes",
+                    "weight_percentage": 30,
+                    "is_leaf": true,
+                    "total_items": 50,
+                    "class_type": "Lecture",
+                    "term": "Final"
+                  },
+                  {
+                    "id": "leaf-fin-lec-3",
+                    "name": "Attendance/Assignments",
+                    "weight_percentage": 30,
+                    "is_leaf": true,
+                    "total_items": 100,
+                    "class_type": "Lecture",
+                    "term": "Final"
+                  }
+                ]
+              },
+              {
+                "id": "node-final-lab",
+                "name": "Laboratory Component",
+                "weight_percentage": 60,
+                "is_leaf": false,
+                "class_type": "Laboratory",
+                "term": "Final",
+                "children": [
+                  {
+                    "id": "leaf-fin-lab-1",
+                    "name": "Lab Practical Exam",
+                    "weight_percentage": 40,
+                    "is_leaf": true,
+                    "total_items": 100,
+                    "class_type": "Laboratory",
+                    "term": "Final"
+                  },
+                  {
+                    "id": "leaf-fin-lab-2",
+                    "name": "Lab Exercises",
+                    "weight_percentage": 50,
+                    "is_leaf": true,
+                    "total_items": 50,
+                    "class_type": "Laboratory",
+                    "term": "Final"
+                  },
+                  {
+                    "id": "leaf-fin-lab-3",
+                    "name": "Attendance/Assignments",
+                    "weight_percentage": 10,
+                    "is_leaf": true,
+                    "total_items": 100,
+                    "class_type": "Laboratory",
+                    "term": "Final"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "grade_components": [
+    {
+      "id": "leaf-mid-lec-1",
+      "section_id": "sec-1785657753858",
+      "term": "Midterm",
+      "class_type": "Lecture",
+      "category_name": "Major Exam",
+      "weight_percentage": 40
+    },
+    {
+      "id": "leaf-mid-lec-2",
+      "section_id": "sec-1785657753858",
+      "term": "Midterm",
+      "class_type": "Lecture",
+      "category_name": "Quizzes",
+      "weight_percentage": 30
+    },
+    {
+      "id": "node-1785657817609-afdb",
+      "section_id": "sec-1785657753858",
+      "term": "Midterm",
+      "class_type": "Lecture",
+      "category_name": "Assignment",
+      "weight_percentage": 20
+    },
+    {
+      "id": "node-1785657827391-shr6",
+      "section_id": "sec-1785657753858",
+      "term": "Midterm",
+      "class_type": "Lecture",
+      "category_name": "Attendance",
+      "weight_percentage": 10
+    },
+    {
+      "id": "leaf-mid-lab-1",
+      "section_id": "sec-1785657753858",
+      "term": "Midterm",
+      "class_type": "Laboratory",
+      "category_name": "Lab Practical Exam",
+      "weight_percentage": 40
+    },
+    {
+      "id": "leaf-mid-lab-2",
+      "section_id": "sec-1785657753858",
+      "term": "Midterm",
+      "class_type": "Laboratory",
+      "category_name": "Lab Exercises",
+      "weight_percentage": 50
+    },
+    {
+      "id": "leaf-mid-lab-3",
+      "section_id": "sec-1785657753858",
+      "term": "Midterm",
+      "class_type": "Laboratory",
+      "category_name": "Attendance/Assignments",
+      "weight_percentage": 10
+    },
+    {
+      "id": "leaf-fin-lec-1",
+      "section_id": "sec-1785657753858",
+      "term": "Final",
+      "class_type": "Lecture",
+      "category_name": "Major Exam",
+      "weight_percentage": 40
+    },
+    {
+      "id": "leaf-fin-lec-2",
+      "section_id": "sec-1785657753858",
+      "term": "Final",
+      "class_type": "Lecture",
+      "category_name": "Quizzes",
+      "weight_percentage": 30
+    },
+    {
+      "id": "leaf-fin-lec-3",
+      "section_id": "sec-1785657753858",
+      "term": "Final",
+      "class_type": "Lecture",
+      "category_name": "Attendance/Assignments",
+      "weight_percentage": 30
+    },
+    {
+      "id": "leaf-fin-lab-1",
+      "section_id": "sec-1785657753858",
+      "term": "Final",
+      "class_type": "Laboratory",
+      "category_name": "Lab Practical Exam",
+      "weight_percentage": 40
+    },
+    {
+      "id": "leaf-fin-lab-2",
+      "section_id": "sec-1785657753858",
+      "term": "Final",
+      "class_type": "Laboratory",
+      "category_name": "Lab Exercises",
+      "weight_percentage": 50
+    },
+    {
+      "id": "leaf-fin-lab-3",
+      "section_id": "sec-1785657753858",
+      "term": "Final",
+      "class_type": "Laboratory",
+      "category_name": "Attendance/Assignments",
+      "weight_percentage": 10
+    }
+  ],
+  "grade_scales": [],
+  "student_grades": [],
+  "rubrics": [
+    {
+      "id": "rubric-1785657860892",
+      "title": "Display Personal Info using Python List - ACT - NT A",
+      "totalPoints": 25,
+      "subjects": [
+        "CC 103"
+      ],
+      "criteria": [
+        {
+          "id": "crit-0-1785657860892",
+          "title": "List Creation and Data Representation",
+          "max_points": 10,
+          "description": "Correctly defines a Python list containing required personal information elements (e.g., name, age, course) using appropriate data types."
+        },
+        {
+          "id": "crit-1-1785657860892",
+          "title": "Output Formatting and Display",
+          "max_points": 10,
+          "description": "Accesses and displays the list elements clearly using indexing, string formatting, or iteration without errors."
+        },
+        {
+          "id": "crit-2-1785657860892",
+          "title": "Code Structure and Syntax",
+          "max_points": 5,
+          "description": "Code is free of syntax errors, uses clear variable names, and includes appropriate comments explaining the implementation."
+        }
+      ]
+    }
+  ]
+}

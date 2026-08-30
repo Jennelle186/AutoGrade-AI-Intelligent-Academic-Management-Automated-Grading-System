@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #E4E3E0;
+    color: #141414;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+}
+
+.hd-card {
+  background-color: #ffffff;
+  border: 1px solid #141414;
+  box-shadow: 3px 3px 0px #141414;
+}
+
+.hd-card-tint {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #141414;
+  box-shadow: 3px 3px 0px #141414;
+}
+
+.hd-card-flat {
+  background-color: #ffffff;
+  border: 1px solid #141414;
+}
+
+.hd-badge {
+  background-color: #141414;
+  color: #E4E3E0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hd-badge-outline {
+  background-color: #E4E3E0;
+  color: #141414;
+  border: 1px solid #141414;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hd-btn-primary {
+  background-color: #141414;
+  color: #E4E3E0;
+  border: 1px solid #141414;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease;
+  box-shadow: 2px 2px 0px #141414;
+  border-radius: 2px;
+}
+
+.hd-btn-primary:hover {
+  background-color: #2b2b2b;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px #141414;
+}
+
+.hd-btn-secondary {
+  background-color: #E4E3E0;
+  color: #141414;
+  border: 1px solid #141414;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  transition: all 0.15s ease;
+  box-shadow: 2px 2px 0px #141414;
+  border-radius: 2px;
+}
+
+.hd-btn-secondary:hover {
+  background-color: #ffffff;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px #141414;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #E4E3E0;
+}
+::-webkit-scrollbar-thumb {
+  background: #141414;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  main {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .shadow-\[3px_3px_0px_\#141414\],
+  .shadow-\[4px_4px_0px_\#141414\],
+  .shadow-md,
+  .shadow-lg,
+  .shadow-xs,
+  .shadow-sm {
+    box-shadow: none !important;
+  }
+  .bg-[#141414] {
+    background-color: #141414 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  @page {
+    size: letter portrait;
+    margin: 12mm;
+  }
+}
+

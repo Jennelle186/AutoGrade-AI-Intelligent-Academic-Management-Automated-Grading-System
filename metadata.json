@@ -1,0 +1,8 @@
+{
+  "name": "AI Academic Grading Assistant",
+  "description": "AI-powered Google Classroom grading assistant, rubric evaluator, structured JSON output generator, and gradebook management studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

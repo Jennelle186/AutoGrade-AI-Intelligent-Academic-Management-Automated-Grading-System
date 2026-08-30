@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "AppState": {
+      "title": "Application Master State",
+      "description": "Stores master db state including courses, students, weight configs, and grades.",
+      "type": "object",
+      "properties": {
+        "courses": { "type": "array" },
+        "students": { "type": "array" },
+        "weight_configs": { "type": "object" },
+        "grade_components": { "type": "array" },
+        "grade_scales": { "type": "array" },
+        "student_grades": { "type": "array" },
+        "rubrics": { "type": "array" }
+      }
+    },
+    "CourseSection": {
+      "title": "Course Section",
+      "description": "Represents an academic course section.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "section_name": { "type": "string" },
+        "subject_name": { "type": "string" },
+        "passing_threshold": { "type": "number" },
+        "createdAt": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "/app_state/{stateId}": {
+      "schema": "AppState",
+      "description": "Master DB state document"
+    },
+    "/sections/{sectionId}": {
+      "schema": "CourseSection",
+      "description": "Course section documents"
+    }
+  }
+}
